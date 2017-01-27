@@ -64,7 +64,7 @@ class CustomFlowLayout: UICollectionViewFlowLayout
         }
     }
 
-    override func indexPathsToDeleteForDecorationView(ofKind elementKind: String) -> [IndexPath] {
+    override func indexPathsToDeleteForSupplementaryView(ofKind elementKind: String) -> [IndexPath] {
         if elementKind == CustomSupplementaryElementKind {
             return deletedIndexPaths
         }
